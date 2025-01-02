@@ -42,7 +42,7 @@ public class NumberFormat internal constructor(
         }
 
         val strippedDecimalPart = when (maximalDecimalDigits != null && decimalPart.length > maximalDecimalDigits) {
-            true -> decimalPart.substring(0, maximalDecimalDigits)
+            true -> decimalPart.substring(0, maximalDecimalDigits).trimEnd('0')
             false -> decimalPart
         }
 
