@@ -7,6 +7,24 @@ public class NumberFormat internal constructor(
     internal val groupSeparator: Char? = null,
     internal val groupSize: Int? = null,
 ) {
+    init {
+        require(minimalDecimalDigits >= 0) {
+            "Minimal decimal digits must be greater than or equal to 0"
+        }
+
+        require(maximalDecimalDigits == null || maximalDecimalDigits >= minimalDecimalDigits) {
+            "Maximal decimal digits ($maximalDecimalDigits) must be greater than or equal to minimal decimal digits ($minimalDecimalDigits)"
+        }
+
+        require(groupSize == null || groupSize > 0) {
+            "Group size must be greater than 0"
+        }
+
+        require(groupSize == null || groupSeparator != null) {
+            "Group separator could not be null when group size is defined"
+        }
+    }
+
     public fun format(number: String): String {
         val isNegative = number[0] == '-'
 
