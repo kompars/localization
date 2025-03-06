@@ -1,4 +1,4 @@
-package org.kompars.localization.numberformat
+package org.kompars.localization.number.format
 
 public class NumberFormat internal constructor(
     internal val decimalSeparator: Char,

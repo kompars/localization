@@ -1,0 +1,29 @@
+public final class org/kompars/localization/number/format/NumberFormat {
+	public final fun format (Ljava/lang/String;)Ljava/lang/String;
+}
+
+public final class org/kompars/localization/number/format/NumberFormatBuilder {
+	public fun <init> ()V
+	public final fun decimalDigits (ILjava/lang/Integer;)V
+	public static synthetic fun decimalDigits$default (Lorg/kompars/localization/number/format/NumberFormatBuilder;ILjava/lang/Integer;ILjava/lang/Object;)V
+	public final fun decimalSeparator (C)V
+	public final fun disableGrouping ()V
+	public final fun grouping (IC)V
+	public final fun maximalDecimalDigits (Ljava/lang/Integer;)V
+	public final fun minimalDecimalDigits (I)V
+}
+
+public final class org/kompars/localization/number/format/NumberFormatBuilderKt {
+	public static final fun NumberFormat (Lkotlin/jvm/functions/Function1;)Lorg/kompars/localization/number/format/NumberFormat;
+	public static final fun copy (Lorg/kompars/localization/number/format/NumberFormat;Lkotlin/jvm/functions/Function1;)Lorg/kompars/localization/number/format/NumberFormat;
+}
+
+public final class org/kompars/localization/number/format/NumberFormatExtensionsKt {
+	public static final fun format (BLorg/kompars/localization/number/format/NumberFormat;)Ljava/lang/String;
+	public static final fun format (DLorg/kompars/localization/number/format/NumberFormat;)Ljava/lang/String;
+	public static final fun format (FLorg/kompars/localization/number/format/NumberFormat;)Ljava/lang/String;
+	public static final fun format (ILorg/kompars/localization/number/format/NumberFormat;)Ljava/lang/String;
+	public static final fun format (JLorg/kompars/localization/number/format/NumberFormat;)Ljava/lang/String;
+	public static final fun format (SLorg/kompars/localization/number/format/NumberFormat;)Ljava/lang/String;
+}
+

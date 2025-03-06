@@ -1,4 +1,4 @@
-package org.kompars.localization.numberformat
+package org.kompars.localization.number.format
 
 public fun Byte.format(format: NumberFormat): String {
     return format.format(toString())

@@ -1,4 +1,4 @@
-package org.kompars.localization.numberformat
+package org.kompars.localization.number.format
 
 public fun NumberFormat(block: NumberFormatBuilder.() -> Unit): NumberFormat {
     return NumberFormatBuilder().apply(block).build()
