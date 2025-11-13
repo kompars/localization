@@ -3,7 +3,7 @@ dokka = "2.1.0"
 git-versioning = "6.4.4"
 kotlin = "2.2.21"
 kotlinx-bcv = "0.18.1"
-maven-publish = "0.34.0"
+maven-publish = "0.35.0"
 
 [plugins]
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
